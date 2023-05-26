@@ -1,5 +1,6 @@
 import { CONFIG } from "site.config"
 import { useEffect } from "react"
+import { getTheme } from '@hooks/useThemeEffect';
 
 //TODO: useRef?
 
@@ -8,9 +9,11 @@ type Props = {
 }
 
 const Utterances: React.FC<Props> = ({ issueTerm }) => {
+  const currentTheme = getTheme();
+  const isDark = currentTheme !== 'light';
+
   useEffect(() => {
-    const theme = "github-light"
-    // 'github-dark'
+    const theme = !isDark ? "github-light" : "gruvbox-dark";
     const script = document.createElement("script")
     const anchor = document.getElementById("comments")
     if (!anchor) return
