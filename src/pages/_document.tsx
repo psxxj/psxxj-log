@@ -30,6 +30,15 @@ class MyDocument extends Document {
               />
             </>
           )}
+          {/* google search console */}
+          {CONFIG.naverSearchAdvisor.enable === true && (
+            <>
+              <meta
+                name="naver-site-verification"
+                content={CONFIG.naverSearchAdvisor.config.siteVerification}
+              />
+            </>
+          )}
         </Head>
         <body className="bg-slate-100 dark:bg-black">
           <Main />
