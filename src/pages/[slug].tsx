@@ -10,7 +10,7 @@ import { getPostBlocks, getPosts } from "@libs/apis"
 export async function getStaticPaths() {
   const posts = await getPosts()
   const filteredPost = filterPosts(posts, {
-    acceptStatus: ["Public", "PublicOnDetail"],
+    acceptStatus: ["Public", "PublicOnDetail", "Friend"],
     acceptType: ["Paper", "Post", "Page"],
   })
 

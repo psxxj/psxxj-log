@@ -1,12 +1,18 @@
 import { CONFIG } from "site.config"
 import Image from "next/image"
 import React from "react"
+import { AiFillLinkedin, AiOutlineGithub, AiOutlineInstagram, AiOutlineMail } from 'react-icons/ai';
+import { useStoreFriendMode } from '@hooks/useStoreFriendMode';
+import { getFriendText } from '@/src/module/getFriendText';
 
 type Props = {
   className?: string
 }
 
 const MobileProfileCard: React.FC<Props> = () => {
+  const [count, setCount] = useStoreFriendMode(state => [state.count, state.setCount]);
+  const handleClick = () => setCount();
+
   return (
     <div className="block lg:hidden">
       <div className="p-1 mb-3 dark:text-white">💻 Profile</div>
@@ -18,18 +24,19 @@ const MobileProfileCard: React.FC<Props> = () => {
             height={90}
             alt="profile_image"
             className="relative"
+            onClick={handleClick}
           />
           <div className="h-fit dark:text-white">
             <div className=" text-xl  italic font-bold">
               {CONFIG.profile.name}
             </div>
             <div className="text-sm text-gray-500 mb-2 dark:text-gray-400">
-              {CONFIG.profile.role}
+              {count === 0 ? CONFIG.profile.role : getFriendText(count)}
             </div>
             <div className="text-sm">{CONFIG.profile.bio}</div>
           </div>
         </div>
-        {/* <div className="flex">
+        <div className="flex">
           {CONFIG.profile.github && (
             <a
               href={`https://github.com/${CONFIG.profile.github}`}
@@ -70,7 +77,7 @@ const MobileProfileCard: React.FC<Props> = () => {
               <AiFillLinkedin className="text-2xl flex-shrink-0" />
             </a>
           )}
-        </div> */}
+        </div>
       </div>
     </div>
   )

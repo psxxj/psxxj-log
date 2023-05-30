@@ -1,5 +1,5 @@
 import { CONFIG } from "site.config"
-import { useEffect } from "react"
+import React, { useEffect } from "react"
 import { getTheme } from '@hooks/useThemeEffect';
 
 //TODO: useRef?

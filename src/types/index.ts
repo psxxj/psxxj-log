@@ -1,4 +1,4 @@
-export type TPostStatus = "Private" | "Public" | "PublicOnDetail"
+export type TPostStatus = "Private" | "Public" | "PublicOnDetail" | "Friend"
 export type TPostType = "Post" | "Paper" | "Page"
 
 export type TPost = {

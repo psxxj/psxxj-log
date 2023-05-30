@@ -7,6 +7,7 @@ import { TCategories, TPosts, TTags } from "@customTypes/index"
 import SearchInput from "./components/SearchInput"
 import { FeedHeader } from "./components/FeedHeader"
 import Footer from "./components/Footer"
+import { useStoreFriendMode } from '@hooks/useStoreFriendMode';
 
 type Props = {
   categories: TCategories
@@ -16,16 +17,11 @@ type Props = {
 
 const Feed: React.FC<Props> = ({ categories, tags, posts }) => {
   const [q, setQ] = useState("")
+  const friendMode = useStoreFriendMode(state => state.friendMode);
+  const filteredPosts = friendMode ? posts : posts.filter(post => post.status[0] !== 'Friend');
 
-  //   .box {
-  //     -ms-overflow-style: none;
-  //     scrollbar-width: none;
-  // }
-  // .box::-webkit-scrollbar {
-  //     display: none;
-  // }
   return (
-    <div className="block md:grid grid-cols-12 gap-6">
+    <div className="block md:grid grid-cols-12 gap-7">
       <div
         className="common-no-scroll-bar sticky top-[73px] hidden lg:block col-span-2 overflow-scroll"
         style={{
@@ -40,7 +36,7 @@ const Feed: React.FC<Props> = ({ categories, tags, posts }) => {
         <SearchInput value={q} onChange={(e) => setQ(e.target.value)} />
         <Lists.TagList className="block lg:hidden" data={tags} />
         <FeedHeader categories={categories} />
-        <Lists.PostList q={q} posts={posts} />
+        <Lists.PostList q={q} posts={filteredPosts} />
         <Footer className="block lg:hidden flex justify-center pb-8" />
       </div>
       <div
