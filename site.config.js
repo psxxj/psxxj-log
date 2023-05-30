@@ -6,13 +6,17 @@ const CONFIG = {
     role: "full-stack developer",
     bio: "WE NEVER WALK ALONE",
     email: "shackleton@gm.gist.ac.kr",
-    linkedin: "shackleton",
+    linkedin: "psxxj",
     github: "psxxj",
     instagram: "psxxj",
   },
   projects: [
     {
-      name: `kidztales`,
+      name: `Nudge Healthcare, Inc.`,
+      href: "https://github.com/cashwalk",
+    },
+    {
+      name: `TBA`,
       href: "https://github.com/kidztales",
     },
   ],

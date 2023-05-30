@@ -12,6 +12,7 @@ type Props = {
 
 const PostCard: React.FC<Props> = ({ data }) => {
   const category = (data.category && data.category?.[0]) || undefined
+  console.log(data);
 
   return (
     <Link href={`/${data.slug}`}>
@@ -36,7 +37,7 @@ const PostCard: React.FC<Props> = ({ data }) => {
             </div>
           )}
           <div
-            className={["p-4", !data.thumbnail && category ? "pt-14" : ""].join(
+            className={["p-4", !data.thumbnail && category ? "pt-14" : "", data.status[0] === 'Friend' ? "bg-amber-50 dark:bg-slate-600" : ""].join(
               " "
             )}
           >
