@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://psxxj-log.vercel.app
+Host: https://psxxj-world.vercel.app
 
 # Sitemaps
-Sitemap: https://psxxj-log.vercel.app/sitemap.xml
+Sitemap: https://psxxj-world.vercel.app/sitemap.xml
