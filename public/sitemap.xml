@@ -1,13 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">-->
-<!--<url><loc>https://morethan-log.vercel.app</loc><lastmod>2023-05-02T10:47:49.616Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>-->
-<!--<url><loc>https://morethan-log.vercel.app/docs</loc><lastmod>2023-05-02T10:47:49.616Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>-->
-<!--<url><loc>https://morethan-log.vercel.app/hot-to-make-sitemap-in-next-js</loc><lastmod>2023-05-02T10:47:49.616Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>-->
-<!--<url><loc>https://morethan-log.vercel.app/apollo-gettings-started-mutate</loc><lastmod>2023-05-02T10:47:49.616Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>-->
-<!--<url><loc>https://morethan-log.vercel.app/apollo-gettings-started-query</loc><lastmod>2023-05-02T10:47:49.616Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>-->
-<!--<url><loc>https://morethan-log.vercel.app/resume</loc><lastmod>2023-05-02T10:47:49.616Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>-->
-<!--<url><loc>https://morethan-log.vercel.app/about-graphql</loc><lastmod>2023-05-02T10:47:49.616Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>-->
-<!--<url><loc>https://morethan-log.vercel.app/how-to-apply-ga-to-next.js</loc><lastmod>2023-05-02T10:47:49.616Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>-->
-<!--<url><loc>https://morethan-log.vercel.app/about-opensource-license</loc><lastmod>2023-05-02T10:47:49.616Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>-->
-<!--<url><loc>https://morethan-log.vercel.app/about</loc><lastmod>2023-05-02T10:47:49.616Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>-->
-<!--</urlset>-->
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://psxxj-world.vercel.app/</loc>
+  <lastmod>2023-05-30T06:53:48+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://psxxj-world.vercel.app/about</loc>
+  <lastmod>2023-05-30T06:53:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://psxxj-world.vercel.app/idea-automatic-blog-01</loc>
+  <lastmod>2023-05-30T06:53:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://psxxj-world.vercel.app/nlp-2</loc>
+  <lastmod>2023-05-30T06:53:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://psxxj-world.vercel.app/fe-mock-server-with-msw</loc>
+  <lastmod>2023-05-30T06:53:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://psxxj-world.vercel.app/nlp-3</loc>
+  <lastmod>2023-05-30T06:53:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
