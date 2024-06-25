@@ -12,12 +12,12 @@ const CONFIG = {
   },
   projects: [
     {
-      name: `Nudge Healthcare, Inc.`,
-      href: "https://github.com/cashwalk",
+      name: `FINDA`,
+      href: "https://finda.co.kr",
     },
     {
-      name: `TBA`,
-      href: "https://github.com/kidztales",
+      name: `KidzTales`,
+      href: "https://tale.fit",
     },
   ],
   // blog setting (required)
